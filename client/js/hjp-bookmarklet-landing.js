@@ -5,6 +5,13 @@
 		$(this).parent('li').addClass('active');
 	});
 	
+	//
+	$('.navbar-brand').click(function (e) {
+		$('ul.navbar-nav li.active').removeClass('active');
+		$('ul.navbar-nav li:first').addClass('active');
+	});
+	
+	
 	//fix active menu on init
 	(function () {
 		var hash = window.location.hash || '#',
