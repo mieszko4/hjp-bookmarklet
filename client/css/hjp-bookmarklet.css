@@ -29,6 +29,7 @@
 	padding: 0 1em;
 	font-size: 12px;
 	text-align: left;
+	z-index: 999999;
 }
 .hjp-bookmarklet-popup-jquery-ui .listup-logo {
 	margin-left: 1em;
@@ -37,6 +38,9 @@
 	height: 30px;
 }
 
+.hjp-bookmarklet-introduction  {
+	z-index: 999999;
+}
 .hjp-bookmarklet-introduction .ui-dialog-titlebar {
 	display: none;
 }
