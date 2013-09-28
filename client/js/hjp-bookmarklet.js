@@ -137,9 +137,16 @@
 		$popup
 	;
 	
-	//TODO: multiple word selection
 	$(document).bind('dblclick', dblclickHandler);
 	$(document).bind('click', clickHandler);
+	
+	/*
+	$(document).bind('mouseup', function () {
+		word = window.getSelection().toString().trim();
+		console.log('load.call for ', word);
+		//this would perhaps be too intrusive for the user
+	});
+	*/
 	
 	//init introduction
 	$('#hjp-loading-image').remove();
