@@ -1,0 +1,52 @@
+@font-face {
+	font-family: Libersina;
+	src: url('../font/Libersina.ttf');
+}
+@font-face {
+	font-family: Libersina;
+	font-weight: bold;
+	src: url('../font/Libersina-bold.ttf');
+}
+@font-face {
+	font-family: Libersina;
+	font-style: italic;
+	src: url('../font/Libersina-italic.ttf');
+}
+@font-face {
+	font-family: Libersina;
+	font-style: italic;
+	font-weight: bold;
+	src: url('../font/Libersina-bold-italic.ttf');
+}
+
+.hjp-bookmarklet-popup {
+	font-family: Libersina;
+}
+.hjp-bookmarklet-popup-jquery-ui .ui-dialog-titlebar {
+	display:none;
+}
+.hjp-bookmarklet-popup-jquery-ui {
+	padding: 0 1em;
+	font-size: 12px;
+	text-align: left;
+}
+.hjp-bookmarklet-popup-jquery-ui .listup-logo {
+	margin-left: 1em;
+}
+.hjp-bookmarklet-popup-jquery-ui .powered-by img {
+	height: 30px;
+}
+
+.hjp-bookmarklet-introduction .ui-dialog-titlebar {
+	display: none;
+}
+.hjp-bookmarklet-introduction .listup-logo {
+	margin-left: 0.5em;
+}
+.hjp-bookmarklet-introduction .powered-by {
+	margin-top: 0.5em;
+}
+.hjp-bookmarklet-introduction .instructions {
+	font-size: 12px;
+	text-align: left;
+}

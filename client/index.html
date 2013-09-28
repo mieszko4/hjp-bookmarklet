@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Miłosz Chmura" />
+		<title>Bookmarklet za Hrvatski Jezični Portal</title>
+		
+		<link rel="icon" href="css/favicon.png" type="image/png" />
+		<link rel="shortcut icon" href="css/favicon.png" type="image/png" />
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+		
+	</head>
+	<body style="padding:20px">
+		<h1>Bookmarklet za Hrvatski Jezični Portal</h1>
+		<p>Ovaj bookmarklet služi za povezivanje Hrvatskog Jezičnog Portala sa svim stranicama na internetu!</p>
+		<h2>Uporaba</h2>
+		<p>Za uporabu klikni dvaputa na bilo koju riječ koja je čisti tekst, tj. nije link, kako bi dohvatio opis riječi iz <a target="_blank" href="http://hjp.novi-liber.hr/?referer=hjp_bookmarklet">Hrvatskog Jezičnog Portala</a>.</p>
+		<!--<p>Također, moguće je selektirati više riječi za dohvat izraza.</p>-->
+		<p>Ako je selektirana riječ pronađena, prikazat će se popup z opisom.</p>
+		<p>Ako se pojave pogreške fonta kod definicija riječi, ili instaliraj moderan preglednik ili instaliraj font Libersina. Više informacija pronađeš na stranici <a target="_blank" href="http://hjp.novi-liber.hr/?referer=hjp_bookmarklet">Hrvatskog Jezičnog Portala</a>.</p>
+		
+		<h2>Kako koristiti na drugim stranicama?</h2>
+		<ol>
+			<li>
+				Spremi sljedeći link kao bookmark ili drag-n-dropaj u bookmarkse.<br />
+				<a id="hjp-bookmarklet-link" href="javascript:(function(){(function(){if(window.hjpBookmarklet!==undefined){window.hjpJQuery('#hjp-bookmarklet-introduction').dialog('open');return;}window.hjpBookmarklet={version:'1.0',baseUrl:'http://hjp-bookmarklet.listup.co:82/'};var loadCounter=0,loadingJQuery=false,loadingJQueryUI=false,oldJQuery=window.jQuery,oldJQueryUi=(window.jQuery!==undefined)?window.jQuery.ui:undefined;function insertScript(url,onload){var script=document.createElement('script');script.src=url;script.onload=onload;script.className='hjp-bookmarklet-external';document.body.appendChild(script);}function insertLink(url,onload){var link=document.createElement('link');link.rel='stylesheet';link.type='text/css';link.href=url;link.className='hjp-bookmarklet-external';document.getElementsByTagName('head')[0].appendChild(link);}loadingJQuery=(window.jQuery===undefined||window.jQuery.fn.jquery.split('.')[0]!==1||window.jQuery.fn.jquery.split('.')[1]<10);loadingJQueryUI=(loadingJQuery||window.jQuery.ui===undefined||window.jQuery.ui.version.split('.')[0]!==1||window.jQuery.ui.version.split('.')[1]<10);if(loadingJQuery){loadCounter++;insertScript('http://code.jquery.com/jquery-1.10.1.min.js',function(){if(loadingJQueryUI){insertScript('http://code.jquery.com/ui/1.10.3/jquery-ui.min.js',scriptLoadFinished);}scriptLoadFinished();});}if(loadingJQueryUI){loadCounter++;insertLink('http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css');if(!loadingJQuery){insertScript('http://code.jquery.com/ui/1.10.3/jquery-ui.min.js',scriptLoadFinished);}}if(loadCounter===0){loadHjpBookmarklet();}insertLink(hjpBookmarklet.baseUrl+'css/hjp-bookmarklet.min.css');function scriptLoadFinished(){loadCounter--;if(loadCounter===0){loadHjpBookmarklet();}}function loadHjpBookmarklet(){window.hjpJQuery=window.jQuery;window.jQuery=oldJQuery;window.$=oldJQuery;if(oldJQueryUi!==undefined){window.jQuery.ui=oldJQueryUi;}insertScript(hjpBookmarklet.baseUrl+'js/hjp-bookmarklet.min.js');}var img=document.createElement('img');img.src=hjpBookmarklet.baseUrl+'img/ajax-loader.gif';img.id='hjp-loading-image';img.alt='';img.style.position='fixed';img.style.top=0;img.style.right=0;img.style.zIndex=999999;document.body.appendChild(img);}());})();">
+					<img src="img/hjp-bookmarklet.png" alt="HJP - Bookmarklet" />
+				</a>
+			</li>
+			<li>Otvori stranicu koju s tekstom u kojem želiš uključit bookmarklet</li>
+			<li>Klikni na spremljeni bookmarklet</li>
+			<li>U desnom gornjem kutu vidjet ćeš ikonicu za loadanje bookmarkleta koja nakon učitavanja će se pretvorit u ikonicu za bookmarklet. Klikom na tu ikonicu, otvorit će se popup s informacijama i mogućnoću brisanja bookmarkleta.</li>
+		</ol>
+		<hr />
+		<h2>Probaj na ovom primjeru iz jednog net.hr <a target="_blanl" href="http://sportski.net.hr/klub-boraca/nevjerojatan-skandal-na-veceri-boksa-u-americi-svi-borci-dopingirani">članka</a></h2>
+		<div>
+			<p>Večer boksa u MGM Grand Hotelu organizirana je kao zagrijavanje za okršaj između Floyda Mayweathera i Saula Alvareza, dva dana kasnije na istom mjestu.</p>
+			<p>Sportska komisija države Nevade odlučila je testirati sve boksače koji su sudjelovali u priredbi, a epilog je bio nevjerojatan. Svi do jednoga su bili dopingirani!</p> 
+			<p>Zasad nema informacija o kojim se zabranjenim supstancama radi i kakve bi mogle biti kazne za prijestupnike. Dodajmo tek da je šlager večeri bila borba između neporaženog Amerikanca Shawna Portera i Meksikanca Julija Diaza u kategoriji velter, a dvoboj dopingiranih pripao je Porteru.</p>
+		</div>
+		
+		<h2>Ostalo</h2>
+		<p>Bookmarklet je provjeren na stranicama
+			<a href="" target="_blank">http://www.index.hr/</a>,
+			<a href="" target="_blank">http://www.net.hr/</a>,
+			<a href="" target="_blank">http://www.jutarnji.hr/</a> i
+			<a href="" target="_blank">http://www.vecernji.hr/</a>
+			na Chrome i Firefox pregledniku.
+		</p>
+		
+		<h2>Autor</h2>
+		<p>Miłosz Chmura</p>
+		
+		<script>
+			(function () {
+				var link = document.getElementById('hjp-bookmarklet-link');
+				if (link.click !== undefined) {
+					link.click();
+				} else {
+					link.onclick();
+				}
+			})();
+		</script>
+	</body>
+</html>
