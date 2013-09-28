@@ -1,7 +1,7 @@
 (function () {
 	var	$ = window.hjpJQuery,
 		bookmarkletBaseUrl = window.hjpBookmarklet.baseUrl,
-		introductionTemplate = '<div id="hjp-bookmarklet-introduction" class="introduction" style="display:none"><h3 class="title">Bookmarklet za Hrvatski Jezični Portal</h3><div class="instructions"><p>Za uporabu klikni dvaputa na bilo koju riječ koja je čisti tekst, tj. nije link, kako bi dohvatio opis riječi iz <a target="_blank" href="http://hjp.novi-liber.hr/?referer=hjp_bookmarklet">Hrvatskog Jezičnog Portala</a>.</p><p>Više informacija pronađeš na stranici <a target="_blank" href="'+bookmarkletBaseUrl+'">Bookmarkleta</a>.</p></div></div>',
+		introductionTemplate = '<div id="hjp-bookmarklet-introduction" class="introduction" style="display:none"><h3 class="title">Bookmarklet za Hrvatski Jezični Portal</h3><div class="instructions"><p>Ovaj bookmarklet omogućava korištenje rječnika <a target="_blank" href="http://hjp.novi-liber.hr/?referer=hjp_bookmarklet">Hrvatskog Jezičnog Portala</a> na svim internetskim stranicama pomoću dvostrukog klika na odabranu riječ.</p></div></div>',
 		disableClassName = 'hjp-bookmarklet-popup',
 		onlyOnePopup = true,
 		idCounter = 0,
@@ -64,7 +64,7 @@
 				
 				href = (results[0].id)?(hjpSearchByIdUrl+encodeURIComponent(results[0].id)):hjpHomeUrl;
 				
-				popupContent += '<p class="link">Vidi više na <a target="_blank" href="'+href+'">Hrvatskom Jezičnom Portalu</a>!</p>';
+				popupContent += '<p class="link">Više na <a target="_blank" href="'+href+'">Hrvatskom Jezičnom Portalu</a>!</p>';
 			} else { //ambigious
 				popupContent += '<p class="ambigious">Pronađeno je više rezultata za riječ <em>'+word+'</em>.</p>';
 				
@@ -75,7 +75,7 @@
 					
 					href = (this.id)?(hjpSearchByIdUrl+encodeURIComponent(this.id)):hjpHomeUrl;
 					
-					popupContent += '<li><b class="word">'+foundWord+'</a></b>: <span class="definition">'+definition+'<span>, <span class="ambigious-link">vidi više na <a target="_blank" href="'+href+'">Hrvatskom Jezičnom Portalu</a></span></li>';
+					popupContent += '<li><b class="word">'+foundWord+'</a></b>: <span class="definition">'+definition+'<span>, <span class="ambigious-link">Više na <a target="_blank" href="'+href+'">Hrvatskom Jezičnom Portalu</a></span></li>';
 				});
 				popupContent += '</ul>';
 			}
@@ -166,7 +166,7 @@
 			'Kreni!': function () {
 				$(this).dialog("close");
 			},
-			'Pobriši': function () {
+			'Ukloni': function () {
 				destroyBookmarklet.call(this);
 			}
 		}
