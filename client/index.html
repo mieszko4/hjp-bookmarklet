@@ -13,7 +13,6 @@
 		<meta property="og:title" content="Bookmarklet za Hrvatski Jezični Portal" /> 
 		<meta property="og:description" content="Bookmarklet koji omogućava korištenje rječnika Hrvatskog Jezičnog Portala na svim internetskim stranicama pomoću dvostrukog klika na odabranu riječ" />
 		<meta property="og:image" content="http://hjp-bookmarklet.listup.co/img/hjp-bookmarklet-logo.png" />
-		https://fbexternal-a.akamaihd.net/safe_image.php?d=AQD847qXFALH3hFL&url=http%3A%2F%2Fhjp-bookmarklet.listup.co%2Fimg%2Fhjp-bookmarklet.png
 		
 		<title>Bookmarklet za Hrvatski Jezični Portal</title>
 		
@@ -60,7 +59,7 @@
 				<h2>Bookmarklet za Hrvatski Jezični Portal</h2>
 				<p>Ovaj bookmarklet omogućava korištenje rječnika <a href="http://hjp.novi-liber.hr/?referer=hjp_bookmarklet">Hrvatskog Jezičnog Portala</a> na svim internetskim stranicama pomoću dvostrukog klika na odabranu riječ.</p>
 				<p><a id="hjp-bookmarklet-link-1" href="javascript:(function(){(function(){if(window.hjpBookmarklet!==undefined){window.hjpJQuery('#hjp-bookmarklet-introduction').dialog('open');return;}window.hjpBookmarklet={version:'1.0',baseUrl:'http://hjp-bookmarklet.listup.co/'};var loadCounter=0,loadingJQuery=false,loadingJQueryUI=false,oldJQuery=window.jQuery,oldJQueryUi=(window.jQuery!==undefined)?window.jQuery.ui:undefined;function insertScript(url,onload){var script=document.createElement('script');script.src=url;script.onload=onload;script.className='hjp-bookmarklet-external';document.body.appendChild(script);}function insertLink(url,onload){var link=document.createElement('link');link.rel='stylesheet';link.type='text/css';link.href=url;link.className='hjp-bookmarklet-external';document.getElementsByTagName('head')[0].appendChild(link);}loadingJQuery=(window.jQuery===undefined||window.jQuery.fn.jquery.split('.')[0]!==1||window.jQuery.fn.jquery.split('.')[1]<10);loadingJQueryUI=(loadingJQuery||window.jQuery.ui===undefined||window.jQuery.ui.version.split('.')[0]!==1||window.jQuery.ui.version.split('.')[1]<10);if(loadingJQuery){loadCounter++;insertScript('http://code.jquery.com/jquery-1.10.1.min.js',function(){if(loadingJQueryUI){insertScript('http://code.jquery.com/ui/1.10.3/jquery-ui.min.js',scriptLoadFinished);}scriptLoadFinished();});}if(loadingJQueryUI){loadCounter++;insertLink('http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css');if(!loadingJQuery){insertScript('http://code.jquery.com/ui/1.10.3/jquery-ui.min.js',scriptLoadFinished);}}if(loadCounter===0){loadHjpBookmarklet();}insertLink(hjpBookmarklet.baseUrl+'css/hjp-bookmarklet.min.css');function scriptLoadFinished(){loadCounter--;if(loadCounter===0){loadHjpBookmarklet();}}function loadHjpBookmarklet(){window.hjpJQuery=window.jQuery;window.jQuery=oldJQuery;window.$=oldJQuery;if(oldJQueryUi!==undefined){window.jQuery.ui=oldJQueryUi;}insertScript(hjpBookmarklet.baseUrl+'js/hjp-bookmarklet.min.js');}var img=document.createElement('img');img.src=hjpBookmarklet.baseUrl+'img/ajax-loader.gif';img.id='hjp-loading-image';img.alt='';img.style.position='fixed';img.style.top=0;img.style.right=0;img.style.zIndex=999999;document.body.appendChild(img);}());})();">
-						<img src="img/hjp-bookmarklet.png" alt="HJP - Bookmarklet" />
+						<img class="img-responsive" src="img/hjp-bookmarklet.png" alt="HJP - Bookmarklet" />
 				</a></p>
 			</section>
 			
@@ -68,7 +67,7 @@
 				<h2>Instalacija</h2>
 				<p>Za instalaciju bookmarkleta dovoljno je spremiti link ispod kao bookmark ili ga povući (drag and drop) u bookmarkse.</p>
 				<p><a id="hjp-bookmarklet-link-2" href="javascript:(function(){(function(){if(window.hjpBookmarklet!==undefined){window.hjpJQuery('#hjp-bookmarklet-introduction').dialog('open');return;}window.hjpBookmarklet={version:'1.0',baseUrl:'http://hjp-bookmarklet.listup.co/'};var loadCounter=0,loadingJQuery=false,loadingJQueryUI=false,oldJQuery=window.jQuery,oldJQueryUi=(window.jQuery!==undefined)?window.jQuery.ui:undefined;function insertScript(url,onload){var script=document.createElement('script');script.src=url;script.onload=onload;script.className='hjp-bookmarklet-external';document.body.appendChild(script);}function insertLink(url,onload){var link=document.createElement('link');link.rel='stylesheet';link.type='text/css';link.href=url;link.className='hjp-bookmarklet-external';document.getElementsByTagName('head')[0].appendChild(link);}loadingJQuery=(window.jQuery===undefined||window.jQuery.fn.jquery.split('.')[0]!==1||window.jQuery.fn.jquery.split('.')[1]<10);loadingJQueryUI=(loadingJQuery||window.jQuery.ui===undefined||window.jQuery.ui.version.split('.')[0]!==1||window.jQuery.ui.version.split('.')[1]<10);if(loadingJQuery){loadCounter++;insertScript('http://code.jquery.com/jquery-1.10.1.min.js',function(){if(loadingJQueryUI){insertScript('http://code.jquery.com/ui/1.10.3/jquery-ui.min.js',scriptLoadFinished);}scriptLoadFinished();});}if(loadingJQueryUI){loadCounter++;insertLink('http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css');if(!loadingJQuery){insertScript('http://code.jquery.com/ui/1.10.3/jquery-ui.min.js',scriptLoadFinished);}}if(loadCounter===0){loadHjpBookmarklet();}insertLink(hjpBookmarklet.baseUrl+'css/hjp-bookmarklet.min.css');function scriptLoadFinished(){loadCounter--;if(loadCounter===0){loadHjpBookmarklet();}}function loadHjpBookmarklet(){window.hjpJQuery=window.jQuery;window.jQuery=oldJQuery;window.$=oldJQuery;if(oldJQueryUi!==undefined){window.jQuery.ui=oldJQueryUi;}insertScript(hjpBookmarklet.baseUrl+'js/hjp-bookmarklet.min.js');}var img=document.createElement('img');img.src=hjpBookmarklet.baseUrl+'img/ajax-loader.gif';img.id='hjp-loading-image';img.alt='';img.style.position='fixed';img.style.top=0;img.style.right=0;img.style.zIndex=999999;document.body.appendChild(img);}());})();">
-						<img src="img/hjp-bookmarklet.png" alt="HJP - Bookmarklet" />
+						<img class="img-responsive" src="img/hjp-bookmarklet.png" alt="HJP - Bookmarklet" />
 				</a></p>
 			</section>
 			
@@ -118,8 +117,8 @@
 				<p>Ovaj boorkmarklet razvio je <em>Miłosz Chmura</em>.</p>
 				<p>Izvorni kȏd dostupan je na <a href="https://github.com/mieszko4/hjp-bookmarklet">GitHubu</a>.<br /></p>
 				<p>Pogledaj također moje druge projekte koje razvijam u timu:</p>
-				<a style="margin-right:50px" href="http://www.listup.co/?referer=hjp_bookmarklet"><img style="margin-top:20px" src="http://hjp-bookmarklet.listup.co/img/listup-logo-big.png" alt="Listup.co"></a>
-				<a href="http://www.demotiviraj.se/?referer=hjp_bookmarklet"><img style="margin-top:20px" src="http://hjp-bookmarklet.listup.co/img/demotiviraj-se-logo.png" alt="Listup.co"></a>
+				<a style="margin-right:50px" href="http://www.listup.co/?referer=hjp_bookmarklet"><img class="img-responsive" style="margin-top:20px" src="http://hjp-bookmarklet.listup.co/img/listup-logo-big.png" alt="Listup.co"></a>
+				<a href="http://www.demotiviraj.se/?referer=hjp_bookmarklet"><img class="img-responsive" style="margin-top:20px" src="http://hjp-bookmarklet.listup.co/img/demotiviraj-se-logo.png" alt="Listup.co"></a>
 			</section>
 		</div>
 		
