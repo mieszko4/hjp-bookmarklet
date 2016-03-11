@@ -8,7 +8,7 @@
 		listupUrl = bookmarkletBaseUrl,
 		hjpHomeUrl = 'http://hjp.novi-liber.hr/',
 		hjpSearchByIdUrl = hjpHomeUrl+'index.php?referer=hjp_bookmarklet&show=search_by_id&id=',
-		serviceUrl = 'http://listup.co:9615/',
+		serviceUrl = 'http://listup.audio:9615/',
 		load = function (word, position) {
 			if (wordsCache[word] === undefined) {
 				$.ajax({
