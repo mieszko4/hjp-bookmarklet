@@ -5,7 +5,7 @@
 	}
 	window.hjpBookmarklet = {
 		version: '1.0',
-		baseUrl: 'http://hjp-bookmarklet.listup.co/'
+		baseUrl: 'http://hjp-bookmarklet.listup.audio/'
 	};
 	
 	var loadCounter = 0,
