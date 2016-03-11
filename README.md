@@ -2,7 +2,7 @@
 
 In this project a bookmarklet was build which enables usage of dictionary of [Croatian Language Portal (Hrvatski Jezični Portal, HJP)](http://hjp.novi-liber.hr/?referer=hjp_bookmarklet) on any web pages just by double clicking on a chosen word.
 
-You can see the bookmarklet and more information about the usage [here (Croatian)](http://hjp-bookmarklet.listup.co).
+You can see the bookmarklet and more information about the usage [here (Croatian)](http://hjp-bookmarklet.listup.audio).
 
 ##Why
 
