@@ -108,7 +108,7 @@ var handleResponse = function (document, word, jsonpCallback, response) {
 };
 
 var searchByWord = function (word, jsonpCallback, response) {
-	var serviceUrl = 'http://hjp.novi-liber.hr/index.php?show=search',
+	var serviceUrl = 'http://hjp.znanje.hr/index.php?show=search',
 		queryParams = {
 			'word': word,
 			'search': undefined,

@@ -1,12 +1,12 @@
 (function () {
 	var	$ = window.hjpJQuery,
 		bookmarkletBaseUrl = window.hjpBookmarklet.baseUrl,
-		introductionTemplate = '<div id="hjp-bookmarklet-introduction" class="introduction" style="display:none"><h3 class="title">Bookmarklet za Hrvatski Jezični Portal</h3><div class="instructions"><p>Ovaj bookmarklet omogućava korištenje rječnika <a target="_blank" href="http://hjp.novi-liber.hr/?referer=hjp_bookmarklet">Hrvatskog Jezičnog Portala</a> na svim internetskim stranicama pomoću dvostrukog klika na odabranu riječ.</p></div></div>',
+		introductionTemplate = '<div id="hjp-bookmarklet-introduction" class="introduction" style="display:none"><h3 class="title">Bookmarklet za Hrvatski Jezični Portal</h3><div class="instructions"><p>Ovaj bookmarklet omogućava korištenje rječnika <a target="_blank" href="http://hjp.znanje.hr/?referer=hjp_bookmarklet">Hrvatskog Jezičnog Portala</a> na svim internetskim stranicama pomoću dvostrukog klika na odabranu riječ.</p></div></div>',
 		disableClassName = 'hjp-bookmarklet-popup',
 		onlyOnePopup = true,
 		idCounter = 0,
 		listupUrl = bookmarkletBaseUrl,
-		hjpHomeUrl = 'http://hjp.novi-liber.hr/',
+		hjpHomeUrl = 'http://hjp.znanje.hr/',
 		hjpSearchByIdUrl = hjpHomeUrl+'index.php?referer=hjp_bookmarklet&show=search_by_id&id=',
 		serviceUrl = 'http://listup.audio:9615/',
 		load = function (word, position) {
